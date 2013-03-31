@@ -1,5 +1,15 @@
 require File.join(File.dirname(__FILE__), 'boot')
 
+if Gem::VERSION >= "1.3.6"
+  module Rails
+    class GemDependency
+      def requirement
+        r = super
+        (r == Gem::Requirement.default) ? nil : r
+      end
+    end
+  end
+end
 
 RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 
@@ -15,12 +25,12 @@ Rails::Initializer.run do |config|
 
   if (File.exist?('config/smtp_settings.yml'))
     SMTP_SETTINGS = YAML.load_file('config/smtp_settings.yml')[RAILS_ENV]
-    if SMTP_SETTINGS      
+    if SMTP_SETTINGS
       config.action_mailer.delivery_method = :smtp
       config.action_mailer.smtp_settings = SMTP_SETTINGS
     end
   end
 
-end  
+end
 
 SMTP_SETTINGS = ActionMailer::Base.smtp_settings unless defined? SMTP_SETTINGS
