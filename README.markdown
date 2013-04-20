@@ -3,8 +3,21 @@
   * 1. bundle install
   * 2. rake fedena:plugins:install_all
   * 3. rake db:setup
+  * 
+Opps error occured while running rake file then try this:
+  gem update --system 1.5.3
 
 Be sure mysql gem and server is installed
+
+If you are a mac user then comment out this code from wickedpdf.rb in vendor/plugins directory
+ if Platform.is_windows?
+   include Win32PdfRenderer
+  elsif Platform.is_linux?
+   include NixPdfRenderer
+  else
+   raise "Unable to find Platform"
+  end
+ 
 
 #Fedena : Open source school management system
 
