@@ -7,6 +7,7 @@ html, body {
 body {
     font-family:sans-serif;
     margin: 0;
+	background:rgb(239, 239, 239);
 }
 
 #top_logo {
@@ -15,6 +16,8 @@ body {
     height:115px; width:155px;
     /*background:#fff url(../../images/login/fedena_logo.jpg) no-repeat;*/
 }
+#top_logo img{ display:none;}
+
 #top_logo h1 {
     text-indent:-9999px;
 }
@@ -28,35 +31,60 @@ body {
 #login_strip {
     margin-top: 19px;
     height: 156px;
-    width: 100%;
-    background: #B00 url(/images/application/bg_pattern.png) repeat;
-}
+    width: 100%;}
 #login_area_bg{margin-top: -175px; height:362px;}
-#login_area {height:362px;width:614px;background:#fff url(../../images/login/login_box.jpg) no-repeat;margin:0px auto;}
+
+#login_area { padding:25px 0; width:614px;
+	
+	background:#fff; margin:0 auto; border-radius:20px; -webkit-box-shadow: 0px 29px 22px rgba(50, 50, 50, 0.55);
+	-moz-box-shadow:    0px 29px 22px rgba(50, 50, 50, 0.55);
+	box-shadow:         0px 29px 22px rgba(50, 50, 50, 0.55); }
+
+
 #login_area label {display:block;width:200px;margin-left:50px;padding-top:30px;font-weight:bold;color:#888;padding-bottom:5px;font-size:110%;}
 
 #username_textbox_bg, #password_textbox_bg {width:507px;height:58px;margin:0px auto;background:#fff url(../../images/login/text_box.jpg) no-repeat;}
 #username_textbox_bg input, #password_textbox_bg input {width:490px;height:54px;margin:2px 0 0 5px;float:left;border:none;background:transparent;font-size:40px;color:#666;}
 
 #submit_area input {
-    background:#312d2a;
-    height:38px;
+    background: #606c88; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYwNmM4OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzZjRjNmIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #606c88 0%, #3f4c6b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#606c88), color-stop(100%,#3f4c6b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #606c88 0%,#3f4c6b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #606c88 0%,#3f4c6b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #606c88 0%,#3f4c6b 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #606c88 0%,#3f4c6b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-8 */
+	
+	
+	border-radius:8px;
+	
     float:right;
     margin-right:58px;
     margin-top:55px;
     border:none;
     color:#fff;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     cursor:pointer;
     -moz-border-radius:12px;
     -webkit-border-radius:12px;
-    padding: 7px 11px;
+    padding: 10px 20px;
 
 }
 #submit_area input:hover{
-    background: #0F0E0D;
-
+	background: #a7cfdf; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E3Y2ZkZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMzUzOGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a7cfdf), color-stop(100%,#23538a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a7cfdf 0%,#23538a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a7cfdf 0%,#23538a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a7cfdf 0%,#23538a 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #a7cfdf 0%,#23538a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 ); /* IE6-8 */
 }
 #resetpw_area input {width:85px;height:38px;float:right;margin-right:58px;margin-top:55px;}
 
@@ -77,7 +105,7 @@ body {
     font-size:14px;
 }
 #wrapper  #help_forgot_pw {margin:50px auto;text-align:center;width:614px;}
-#wrapper  #help_forgot_pw a {text-decoration:none;font-weight:bold;color:#b00;}
+#wrapper  #help_forgot_pw a {text-decoration:none;font-weight:bold;color:#333;}
 #wrapper  #help_forgot_pw a:hover {text-decoration:underline;font-weight:bold;color:#b00;}
 
 #username_texbox_bg input{border:none;margin:0px; padding:0px;text-align:center;}
@@ -89,7 +117,6 @@ input[type="text"], input[type="password"], textarea, select {outline: none;}
     margin-top : -33px; */
     height : 66px;
     clear : both;
-    background: url(/images/foot.png) repeat-x;
     width:100%;
 }
 #footer_logo {
@@ -114,14 +141,7 @@ input[type="text"], input[type="password"], textarea, select {outline: none;}
 }
 
 #powered_by {
-    height:20px;
-    padding:35px 0 0 0;
-    width:auto;
-    margin:0 auto;
-    color:#fff;
-    font-size:12px;
-    font-weight:bold;
-    float: right;
+    display:none;
 }
 #powered_by a {
     color:#fff;

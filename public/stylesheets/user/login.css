@@ -5,11 +5,12 @@
     width: 350px !important;
 }
 .forgot_password_link a{
-    color: #b00;
+    color: rgb(70, 151, 22);
     text-decoration: none;
 }
 .forgot_password_link a:hover{
     text-decoration: underline;
+	color: rgb(165, 37, 21);
 }
 #login_area_bg{
     height: 400px !important;
