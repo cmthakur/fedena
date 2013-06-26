@@ -1,0 +1,196 @@
+
+#banner{
+	position: absolute;
+
+}
+
+.oneByOne1{
+	margin-top: 250px;
+	display: block;
+	width: 1140px;
+	height: 409px;
+	background: #EFEFEF url(../../images/home/bannerbg.png) repeat;
+	position: relative;
+}
+
+#banner .oneByOne_item{
+	position: absolute;
+	width: 1140px;
+	height: 409px;
+	overflow: hidden;
+	display: none;
+}
+
+#banner .oneByOne_item img{
+	position: absolute;
+	bottom: 38px; right: 70px;  overflow: visible;
+}
+
+#exampleline{
+	position: relative;
+	margin: 5% 0 0 0;
+}
+
+
+/* change the width of the slider in your own responsive media query */
+@media only screen and (min-width: 960px) {
+	.oneByOne1, #banner .oneByOne_item, #wrapper, #exampleline img{
+		width: 1140px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	.oneByOne1, #banner .oneByOne_item, #wrapper, #exampleline img{ width: 748px; }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	.oneByOne1, #banner .oneByOne_item, #wrapper, #exampleline img{
+		width: 460px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	.oneByOne1, #banner .oneByOne_item, #wrapper, #exampleline img{
+		width: 300px;
+	}
+
+}
+
+#banner .oneByOne_item span{
+}
+
+#banner .oneByOne_item a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+
+#banner .oneByOne_item .slide1Txt1{
+  	position: relative;
+	float: left;
+	margin: 5% 2% 0 7%;
+	font-size: 28px;
+	background: #FFFFFF;
+	padding: 8px;
+}
+
+#banner .oneByOne_item .slide1Txt2{
+  	position: relative;
+	clear: left;
+	float: left;
+	margin: 6px 2% 0 7%;
+	color: #666666;
+	width: 480px;
+	font-size: 16px;
+	line-height: 25px;
+	background: #FFFFFF;
+	padding: 8px;
+}
+
+#banner .oneByOne_item .slide-button{
+  	position: relative;
+	clear: left;
+	float: left;
+	margin: 6px 2% 0 8%;
+	font-size: 12px;
+	border-radius: 15px;
+}
+
+.slide-button {
+
+        -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+        box-shadow:inset 0px 1px 0px 0px #54a3f7;
+
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+        background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+        background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+        background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+        background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+        background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+
+        background-color:#007dc1;
+
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+        border-radius:3px;
+
+        border:1px solid #124d77;
+
+        display:inline-block;
+        color:#ffffff;
+        font-size:14px;
+        font-weight:normal;
+        padding:7px 30px;
+        text-decoration:none;
+
+        text-shadow:0px 1px 0px #000;
+
+    }
+    .slide-button:hover {
+
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+        background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+
+        background-color:#0061a7;
+    }
+
+
+
+
+#banner .oneByOne_item img.bigImage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+}
+
+#banner .oneByOne_item .slide2Txt1{
+  	position: relative;
+	float: left;
+	margin: 10% 0 0 40%;
+	color: #9ACD32;
+	font-size: 24px;
+	background: #FFFFFF;
+	padding: 8px;
+}
+
+#banner .oneByOne_item span.slide2Txt2{
+  	position: relative;
+	clear: left;
+	float: left;
+	margin: 12px 0 0 40%;
+	color: #666666;
+	font-size: 12px;
+	background: #FFFFFF;
+	padding: 8px;
+}
+
+#banner .oneByOne_item span.slide3Txt1{
+  	position: relative;
+	float: left;
+	margin: 20% 0 0 30%;
+	color: #9ACD32;
+	font-size: 24px;
+	background: #FFFFFF;
+	padding: 8px;
+}
+
+#banner .oneByOne_item span.slide3Txt2{
+  	position: relative;
+	clear: left;
+	float: left;
+	margin: 12px 0 0 30%;
+	color: #666666;
+	font-size: 12px;
+	background: #FFFFFF;
+	padding: 8px;
+}
