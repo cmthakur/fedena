@@ -28,6 +28,7 @@ GEM
       session
     session (3.1.0)
       fattr
+    thoughtbot-shoulda (2.11.1)
 
 PLATFORMS
   ruby
@@ -39,3 +40,4 @@ DEPENDENCIES
   rails (= 2.3.5)
   rake (= 0.8.7)
   rush (= 0.6.8)
+  thoughtbot-shoulda (~> 2.11.1)

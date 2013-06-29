@@ -3,6 +3,7 @@ body {
     font-family:Arial;
     margin:0;
     padding:0px;
+	background:rgb(239, 239, 239);
 }
 .extender {
     height:1px;
@@ -10,7 +11,7 @@ body {
 }
 #header_bg {
     height : 80px;
-    background : #b00 url(../../images/application/bg_pattern.png) repeat;
+    background : rgb(42, 85, 113) ;
 }
 #header {
     width : 980px; 
